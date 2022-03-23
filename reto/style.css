@@ -1,0 +1,132 @@
+#mainlayout {
+    background-color: rgb(236, 30, 48);
+    width: 1280px;
+    height: 2000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7,1fr);
+    gap: 0;
+    position: relative;
+}
+
+#ruler.blanco {
+    grid-column: 2/ 6;
+    grid-row: 2/2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    word-spacing: 120px;
+}
+
+#texto.blanco {
+    margin-right:100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: monospace;
+    font-size: 6px;
+    font-weight: lighter;
+    word-spacing: 100px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    z-index: 0;
+    
+}
+
+#titulo.blanco {
+    
+    font-family: 'League Spartan', sans-serif;
+    font-size: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+    text-align: center;
+    letter-spacing: 80px;
+    font-weight: bold;
+
+}
+
+#patrongrafico{
+    grid-column: 1/-1;
+    grid-row: 2 /5;
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    transform: translate(-30,10);
+    z-index: 1; /* el numero es el layer para arrange atras y adelante*/
+
+    /*margin left: -30px;
+     */
+}
+
+#patrongrafico:hover{
+    fill: white;
+    transition: fill 1s;
+}
+
+#thefutur {
+    grid-column: 2/3;
+    grid-row: -2/-1; 
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 60%;
+
+}
+
+#thefutur:hover{
+    cursor: pointer;
+    color: rgb(175, 22, 34);
+}
+
+#blind {
+    display: flex;
+    align-items: center;
+    grid-column: 4/6;
+    grid-row: 5/6;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    
+}
+
+#blind div{
+    background-color: black;
+    padding: 4px 8px;
+    z-index: 10;
+}
+
+#afs {
+    display: flex;
+    align-items: start;
+    grid-column: 5;
+    grid-row: 1;
+    color: rgb(175, 22, 34);
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+#afs div{
+    background-color: white;
+    padding: 4px 8px;
+    z-index: 10;
+}
+
+.blanco {
+    color: white;
+
+}
+
+#lineas {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    margin-left: 50px;
+}
